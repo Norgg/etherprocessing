@@ -52,16 +52,7 @@ function _updateInitialReferrer(data) {
 }
 
 function _getScopedDomain(subDomain) {
-  var d = request.domain;
-  if (d.indexOf(".") == -1) {
-    // special case for "localhost".  For some reason, firefox does not like cookie domains
-    // to be ".localhost".
-    return undefined;
-  }
-  if (subDomain) {
-    d = subDomain + "." + d;
-  }
-  return "." + d;
+  return undefined;
 }
 
 //--------------------------------------------------------------------------------
