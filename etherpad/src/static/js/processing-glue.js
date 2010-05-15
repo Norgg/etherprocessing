@@ -31,6 +31,16 @@ var reload_processing = function() {
   return false;
 }
 
-setTimeout(function() {padeditor.ace.setNotifyDirty(start_reload_timer);}, 0);
+var register_notify_dirty = function() {
+  if (padeditor.ace != null) {
+    padeditor.ace.setNotifyDirty(start_reload_timer);
+  }
+  else {
+    //Wait a bit more for ACE to be ready.
+    setTimeout(register_notify_dirty, 500);
+  }
+}
+
+setTimeout(register_notify_dirty, 500);
 
 reload_processing();
