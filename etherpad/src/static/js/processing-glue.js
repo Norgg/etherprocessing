@@ -1,4 +1,4 @@
-var glue_func = function() {
+var reload_processing = function() {
   if (self.timeout) {
     clearTimeout(self.timeout);
   }
@@ -26,6 +26,6 @@ var glue_func = function() {
   }, 1000);
 }
 
-setTimeout(function() {padeditor.ace.setNotifyDirty(glue_func);},
+setTimeout(function() {padeditor.ace.setNotifyDirty(reload_processing);},
            2000);
-glue_func();
+reload_processing();
