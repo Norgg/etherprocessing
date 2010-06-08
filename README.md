@@ -1,6 +1,19 @@
-# About Etherpad
+# etherprocessing
+A combination of etherpad and processing.js.
+
+Code is run whenever the user pauses in typing.
+
+A version should be running on http://ethasketch.com unless it is broken.
+
+# Etherpad
 EtherPad is a web-based realtime collaborative document editor.
 
-EtherPad currently lives at <http://etherpad.org>
+EtherPad used to live at <http://etherpad.org>, but has been acquired by Google
+and open sourced.
 
-For instructions to build and run EtherPad, see: <http://doc.etherpad.org/ep/tag/?query=installation>
+The current EtherPad repository lives at http://github.com/ether/pad
+
+# Processing.js
+Processing.js is a javascript implenentation of processing, an open source
+programming language and environment for people who want to program images,
+animation, and interactions.
